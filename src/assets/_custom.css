@@ -1,0 +1,7 @@
+.outlet {
+    height: calc(100% - 200px);
+}
+
+.header-logo {
+    height: 36px;
+}

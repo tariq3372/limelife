@@ -5,16 +5,23 @@ import Contactus from '../pages/Contactus'
 import Home from '../pages/Home'
 import Protfolio from '../pages/Portfolio'
 import Service from '../pages/Service'
+import Layout from '../layouts'
 
 const Router = () => {
   let element = [
-    { path: "/home", element: <Home /> },
-    { path: "/protfolio", element: <Protfolio /> },
-    { path: "/service", element: <Service /> },
-    { path: "/aboutus", element: <Aboutus /> },
-    { path: "/contactus", element: <Contactus /> },
-    { path: "/", element: <Navigate to="/home" /> },
-    { path: "*", element: <Navigate to="/home" /> }
+    { 
+      path: "/",
+      element: <Layout/>,
+      children: [
+        { path: "/home", element: <Home /> },
+        { path: "/protfolio", element: <Protfolio /> },
+        { path: "/service", element: <Service /> },
+        { path: "/aboutus", element: <Aboutus /> },
+        { path: "/contactus", element: <Contactus /> },
+        { path: "/", element: <Navigate to="/home" /> },
+        { path: "*", element: <Navigate to="/home" /> }
+      ]
+    }
   ]
   return useRoutes(element);
 }
