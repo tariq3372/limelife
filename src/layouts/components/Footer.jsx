@@ -17,10 +17,9 @@ const Footer = () => {
 
             </Grid>
             <Grid item xs={4}>
-              <Typography sx={{ color: "white" }}> A : No 40 Baria Sreet 133/2 NewYork City, </Typography>
-              <Typography sx={{ color: "white" }}> NY, United States </Typography>
-              <Typography sx={{ color: "white" }}>E: info.contact@gmail.com </Typography>
-              <Typography sx={{ color: "white" }}>  P: (00) 123 456 789 </Typography>
+              <Typography sx={{ color: "white" }}> <span style={{ fontWeight: "bold", color: "yellow" }}>A</span> : No 40 Baria Sreet 133/2 NewYork City, NY, United States</Typography>
+              <Typography sx={{ color: "white" }}> <span style={{ fontWeight: "bold", color: "yellow" }}>E</span>: info.contact@gmail.com </Typography>
+              <Typography sx={{ color: "white" }}> <span style={{ fontWeight: "bold", color: "yellow" }}>P</span>: (00) 123 456 789 </Typography>
             </Grid>
           </Grid>
         </Grid>
