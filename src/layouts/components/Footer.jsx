@@ -3,7 +3,7 @@ import { Grid, Box, Typography, Card, CardContent, TextField, Stack, Button } fr
 
 const Footer = () => {
   return (
-    <Box sx={{ backgroundColor: 'black'}}>
+    <Box sx={{ backgroundColor: 'black' }}>
       <Grid container sx={{ padding: "80px 0px 100px 99px" }} >
         <Grid item xs={8}>
           <Grid container spacing={10} flexDirection="column" >
@@ -30,25 +30,23 @@ const Footer = () => {
               <Stack flexDirection='column' spacing={5} >
                 <Typography >We will love to hear from you!</Typography>
                 <TextField
-                  id="filled-multiline-flexible"
+                  id="outlined-textarea"
                   label="Name"
+                  placeholder="Your Name"
                   multiline
-                  maxRows={2}
-                  variant="filled"
                 />
                 <TextField
-                  id="filled-multiline-flexible"
+                  id="outlined-textarea"
                   label="Email"
+                  placeholder="abc@gmail.com"
                   multiline
-                  maxRows={2}
-                  variant="filled"
                 />
                 <TextField
-                  id="filled-multiline-flexible"
+                  id="outlined-multiline-static"
                   label="Your Comment"
                   multiline
-                  maxRows={4}
-                  variant="filled"
+                  rows={4}
+                  defaultValue=""
                 />
                 <Button sx={{ borderColor: "black", color: "black" }} variant="outlined">Send Message</Button>
               </Stack>
