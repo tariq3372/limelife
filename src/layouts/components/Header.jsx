@@ -13,13 +13,22 @@ import { styled, alpha } from '@mui/material/styles';
 import SearchIcon from '@mui/icons-material/Search';
 import InputBase from '@mui/material/InputBase';
 import MailIcon from '@mui/icons-material/Mail';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
+import HomeHeader from './HomeHeader';
 
-const pages = ['HOME', 'PORTFOLIO', 'SERVICE', 'ABOUT US', 'CONTACT US'];
+const pages = [
+  { name: 'HOME', path: '/home' },
+  { name: 'PORTFOLIO', path: '/protfolio' },
+  { name: 'SERVICE', path: '/service' },
+  { name: 'ABOUT US', path: '/aboutus' },
+  { name: 'CONTACT US', path: '/contact-us' },
+];
 
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const navigate = useNavigate();
+  const { pathname } = useLocation();
+  console.log('\n\npathname:', pathname)
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -28,6 +37,9 @@ const Header = () => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+  const goToPage = (page) => {
+    navigate(page.path);
+  }
 
   const handleNavigation = (value) => {
     console.log("value", value);
@@ -77,7 +89,7 @@ const Header = () => {
   }));
 
   return (
-    // <AppBar position="static" sx={{ backgroundColor: 'red' }} >
+    <>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <img
@@ -115,8 +127,8 @@ const Header = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page.path} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -125,11 +137,13 @@ const Header = () => {
           <Box sx={{ flexGrow: 1, justifyContent: 'center', display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'black', display: 'block' }}
+                key={page.path}
+                onClick={() => goToPage(page)}
+                sx={{ my: 0, color: pathname === page.path ? 'rgba(212, 212, 52, 1)' : 'black', display: 'block', minWidth: '98px', minHeight: '36px' }}
               >
-                {page}
+                {pathname === page.path && <div className='menu-active-top' />}
+                {page.name}
+                {pathname === page.path && <div className='menu-active-bottom' />}
               </Button>
             ))}
           </Box>
@@ -155,6 +169,8 @@ const Header = () => {
 
         </Toolbar>
       </Container>
+      <HomeHeader />
+    </>
   );
 };
 export default Header;

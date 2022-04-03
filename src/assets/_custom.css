@@ -1,11 +1,27 @@
 .outlet {
-    height: calc(100% - 200px);
+    /* height: calc(100% - 200px); */
+    height: 100%;
 }
 
 .header-logo {
-    height: 100px;
+    height: 50px;
 }
 
 .footer-logo {
     height: 100px;
+}
+
+.menu-active-top {
+    height: 2px;
+    background-color: rgba(212, 212, 52, 1);
+    margin-right: 50%;
+}
+.menu-active-bottom {
+    height: 2px;
+    background-color: rgba(212, 212, 52, 1);
+    margin-left: 50%;
+}
+
+.contact-form-input {
+    margin-top: 50px;
 }

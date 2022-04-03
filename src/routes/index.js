@@ -16,8 +16,8 @@ const Router = () => {
         { path: "/home", element: <Home /> },
         { path: "/protfolio", element: <Protfolio /> },
         { path: "/service", element: <Service /> },
-        { path: "/aboutus", element: <Aboutus /> },
-        { path: "/contactus", element: <Contactus /> },
+        { path: "/about-us", element: <Aboutus /> },
+        { path: "/contact-us", element: <Contactus /> },
         { path: "/", element: <Navigate to="/home" /> },
         { path: "*", element: <Navigate to="/home" /> }
       ]
