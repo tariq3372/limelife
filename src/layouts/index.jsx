@@ -5,7 +5,7 @@ import Header from "./components/Header";
 
 const index = () => {
   return (
-    <div style={{ minHeight: "100%", padding: "33px 74px 34px 74px" }}>
+    <div style={{ minHeight: "100%", padding: "5%" }}>
       <Header />
       <div className="outlet">
         <Outlet />
