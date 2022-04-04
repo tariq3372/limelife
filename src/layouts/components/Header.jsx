@@ -20,7 +20,7 @@ const pages = [
   { name: 'HOME', path: '/home' },
   { name: 'PORTFOLIO', path: '/protfolio' },
   { name: 'SERVICE', path: '/service' },
-  { name: 'ABOUT US', path: '/aboutus' },
+  { name: 'ABOUT US', path: '/about-us' },
   { name: 'CONTACT US', path: '/contact-us' },
 ];
 
@@ -28,7 +28,6 @@ const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const navigate = useNavigate();
   const { pathname } = useLocation();
-  console.log('\n\npathname:', pathname)
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -39,11 +38,6 @@ const Header = () => {
   };
   const goToPage = (page) => {
     navigate(page.path);
-  }
-
-  const handleNavigation = (value) => {
-    console.log("value", value);
-    // navigate('/dashboard', { replace: true });
   }
 
   const Search = styled('div')(({ theme }) => ({
@@ -139,7 +133,7 @@ const Header = () => {
               <Button
                 key={page.path}
                 onClick={() => goToPage(page)}
-                sx={{ my: 0, color: pathname === page.path ? 'rgba(212, 212, 52, 1)' : 'black', display: 'block', minWidth: '98px', minHeight: '36px' }}
+                sx={{ my: 0, color: pathname === page.path ? '#afeb34' : 'black', display: 'block', minWidth: '98px', minHeight: '36px' }}
               >
                 {pathname === page.path && <div className='menu-active-top' />}
                 {page.name}
@@ -147,7 +141,7 @@ const Header = () => {
               </Button>
             ))}
           </Box>
-
+          {/* 'rgba(212, 212, 52, 1)' */}
           <Box sx={{ flexGrow: 0 }}>
             <Search>
               <SearchIconWrapper>
@@ -165,8 +159,6 @@ const Header = () => {
               <MailIcon />
             </IconButton>
           </Box>
-
-
         </Toolbar>
       </Container>
       <HomeHeader />

@@ -13,12 +13,14 @@
 
 .menu-active-top {
     height: 2px;
-    background-color: rgba(212, 212, 52, 1);
+    /* background-color: rgba(212, 212, 52, 1); */
+    background-color: #afeb34;
     margin-right: 50%;
 }
 .menu-active-bottom {
     height: 2px;
-    background-color: rgba(212, 212, 52, 1);
+    /* background-color: rgba(212, 212, 52, 1); */
+    background-color: #afeb34;
     margin-left: 50%;
 }
 
