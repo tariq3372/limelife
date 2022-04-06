@@ -27,3 +27,12 @@
 .contact-form-input {
     margin-top: 50px;
 }
+
+.carousel-root {
+    height: 100%;
+}
+
+.carousel-slider {
+    display: flex;
+    height: 100%;
+}

@@ -17,7 +17,7 @@ const HomeHeader = () => {
         </Box>
       </Grid>
       <Box sx={{ position: "absolute", right: "0px", height: "100%", backgroundColor:"black", width: "50%", zIndex: -1}}>
-      {/* <Slider/> */}
+      <Slider/>
       </Box>
     </Grid>
   );

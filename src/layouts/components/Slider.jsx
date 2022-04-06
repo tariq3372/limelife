@@ -1,26 +1,34 @@
-import Flickity from 'react-flickity-component'
+import React from 'react';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 
-const flickityOptions = {
-    initialIndex: 2
-}
-
-const Slider =  () => {
+const Slider = () => {
   return (
-    <Flickity
-      className={'carousel'} // default ''
-      elementType={'div'} // default 'div'
-      options={flickityOptions} // takes flickity options {}
-      disableImagesLoaded={false} // default false
-      reloadOnUpdate // default false
-      static // default false
+    <Carousel
+    autoPlay
+    infiniteLoop
+    showArrows={false}
+    showStatus={false}
+    showIndicators={false}
+    showThumbs={false}
     >
-      <img 
-        src={require("../../assets/images/Banner1-Green.jpg")}
-        alt="banner"
-        style={{ width:"100%", }}
-      />
-    </Flickity>
-  )
+        <img
+         src={require('../../assets/images/slider.jpeg')}
+         alt="slider"
+         height="100%"
+        />
+         <img
+         src={require('../../assets/images/slider1.jpeg')}
+         alt="slider1"
+         height="100%"
+        />
+        <img
+         src={require('../../assets/images/slider2.jpeg')}
+         alt="slider2"
+         height="100%"
+        />
+    </Carousel>
+  );
 }
 
 export default Slider;
