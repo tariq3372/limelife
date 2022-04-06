@@ -10,8 +10,8 @@ const Home = () => {
         <Grid container>
           {/* 1 */}
           <Grid item sm={6} xs={12}>
-            <Typography fontSize={18} fontWeight="bold">Kawhi Leonard</Typography>
-            <Typography fontSize={14} color="#707070"> Creative Director</Typography>
+            <Typography fontSize={36} fontFamily="muli-light" color="#252525" >Kawhi Leonard</Typography>
+            <Typography fontSize={14} color="#707070"> CREATIVE DIRECTOR</Typography>
             <Grid sx={{ mt: '41px' }}>
               <FacebookOutlined style={{ fontSize: 32, marginRight: 31 }} />
               <Twitter style={{ fontSize: 32, marginRight: 31 }} />
@@ -21,7 +21,7 @@ const Home = () => {
           </Grid>
           {/* 2 */}
           <Grid item sm={6} xs={12} sx={{ borderLeft: '1px solid #707070', pl: 3, md: { mt: '41px' } }}>
-            <Typography color="#707070">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudanm, totam rem aperiam, eaque.</Typography>
+            <Typography  fontSize={16} color="#707070" fontFamily="muli-light" >Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudanm, totam rem aperiam, eaque.</Typography>
           </Grid>
         </Grid>
 
@@ -34,8 +34,8 @@ const Home = () => {
               alt="banner"
             />
             <CardContent>
-              <Typography color="#252525">Sandra Jackson</Typography>
-              <Typography size={14} color="#707070">art derector</Typography>
+              <Typography  fontSize={24} fontFamily="muli-light" color="#252525" >Sandra Jackson</Typography>
+              <Typography fontSize={14} color="#707070">ART DIRECTOR</Typography>
             </CardContent>
           </Button>
           <Button onMouseEnter={() => setHover('2')} onMouseLeave={() => setHover(null)} sx={{ mr: 2, my: '10%', height: '460px', flexDirection: 'column',display:'flex' }}>
@@ -46,8 +46,8 @@ const Home = () => {
               alt="banner"
             />
             <CardContent>
-              <Typography color="#252525">Sandra Jackson</Typography>
-              <Typography size={14} color="#707070">art derector</Typography>
+              <Typography fontSize={24} fontFamily="muli-light" color="#252525">Sammy Filton</Typography>
+              <Typography fontSize={14} color="#707070">Stylelist</Typography>
             </CardContent>
           </Button>
         </Grid>
@@ -69,8 +69,8 @@ const Home = () => {
         </Grid>
         <Grid item sx={{ bgcolor: 'black', height: '100%', position: 'absolute', right: '0px', width: '70%', zIndex: '-1', justifyContent: 'space-between', display: 'flex', flexDirection: 'column'  }}>
           <Box sx={{ justifyContent: 'center', display: 'flex', width: '100%', my: 'auto' }}>
-            <Typography fontSize={20} letterSpacing={15} color="white" sx={{ writingMode: 'tb-rl', transform: 'rotate(180deg)', ml: '40%', mr: '5%' }}>OUR TEAMS</Typography>
-            <Typography fontSize={58} color="white">01</Typography>
+            <Typography fontFamily="muli-light" fontWeight="bold" fontSize={24} letterSpacing={15} color="#FFFFFF" sx={{ writingMode: 'tb-rl', transform: 'rotate(180deg)', ml: '40%', mr: '5%' }}>OUR TEAMS</Typography>
+            <Typography fontFamily="ocrastd" fontSize={72} color="#FFFFFF">01</Typography>
           </Box>
         </Grid>
         <Button

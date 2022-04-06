@@ -12,8 +12,6 @@ const HomeHeader = () => {
           <Typography fontSize={55} fontWeight="bold" color="#252525" letterSpacing="02px">PASSION</Typography>
         </div>
         <Box sx={{ height:"150%", border: '15px solid #afeb34', width: "80%", position: 'absolute', right: '0px', zIndex: -1}}>
-
-        
         </Box>
       </Grid>
       <Box sx={{ position: "absolute", right: "0px", height: "100%", backgroundColor:"black", width: "50%", zIndex: -1}}>
