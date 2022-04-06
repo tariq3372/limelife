@@ -1,8 +1,8 @@
-import { Box, Button, Card, CardContent, CardMedia, Divider, Grid, Link, Typography } from "@mui/material";
+import { Box, Button, Card, CardContent, CardMedia, Grid, Typography } from "@mui/material";
 import React, { useState } from "react";
-import { FacebookSharp, Twitter, Instagram, FacebookOutlined, Google } from '@mui/icons-material';
+import { Twitter, Instagram, FacebookOutlined, Google } from '@mui/icons-material';
 const Home = () => {
-  const [abc, setAbc] = useState(null);
+  const [hover, setHover] = useState(null);
 
   return (
     <Grid container sx={{ mt: '100px', mb: '70px' }}>
@@ -10,7 +10,7 @@ const Home = () => {
         <Grid container>
           {/* 1 */}
           <Grid item sm={6} xs={12}>
-            <Typography fontSize={18} fontWeight="bold">Kawhi Leonard/Typography</Typography>
+            <Typography fontSize={18} fontWeight="bold">Kawhi Leonard</Typography>
             <Typography fontSize={14} color="#707070"> Creative Director</Typography>
             <Grid sx={{ mt: '41px' }}>
               <FacebookOutlined style={{ fontSize: 32, marginRight: 31 }} />
@@ -26,7 +26,7 @@ const Home = () => {
         </Grid>
 
         <Grid sx={{ display: 'flex', flexDirection: 'row' }}>
-          <Button onMouseEnter={() => setAbc('1')} onMouseLeave={() => setAbc(null)}  sx={{ mr: 2, my: '10%', height: '460px', flexDirection: 'column',display:'flex' }}>
+          <Button onMouseEnter={() => setHover('1')} onMouseLeave={() => setHover(null)}  sx={{ mr: 2, my: '10%', height: '460px', flexDirection: 'column',display:'flex' }}>
             <CardMedia
               sx={{ height: '100%', width: '100%' }}
               component="img"
@@ -38,7 +38,7 @@ const Home = () => {
               <Typography size={14} color="#707070">art derector</Typography>
             </CardContent>
           </Button>
-          <Button onMouseEnter={() => setAbc('2')} onMouseLeave={() => setAbc(null)} sx={{ mr: 2, my: '10%', height: '460px', flexDirection: 'column',display:'flex' }}>
+          <Button onMouseEnter={() => setHover('2')} onMouseLeave={() => setHover(null)} sx={{ mr: 2, my: '10%', height: '460px', flexDirection: 'column',display:'flex' }}>
             <CardMedia
               sx={{ height: '100%', width: '100%' }}
               component="img"
@@ -56,7 +56,7 @@ const Home = () => {
       <Grid container md={6} sx={{ position: 'relative' }}>
         <Grid item md={7} xs={5} sx={{ my: 'auto' }}>
           <Card sx={{ mr: 2, my: '10%', height: 500, width: '100%' }}>
-            {abc &&
+            {hover &&
               <CardMedia
               sx={{ height: '100%', width: '100%' }}
               component="img"
