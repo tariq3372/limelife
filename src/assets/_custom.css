@@ -34,5 +34,15 @@
 
 .carousel-slider {
     display: flex;
-    height: 100%;
+    min-height: 100%;
+}
+
+.slider-wrapper {
+    display: contents;
+}
+
+.teambgm {
+    background-image: url(../assets/images/teambgm.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }

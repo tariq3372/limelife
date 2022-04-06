@@ -6,10 +6,15 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import './assets/fonts/muli.light.ttf';
+// theme
+import ThemeConfig from './theme';
+import GlobalStyles from './theme/globalStyles';
 
 function App() {
   return (
-    <Router/>
+    <ThemeConfig>
+      <Router />
+    </ThemeConfig>
   );
 }
 

@@ -28,6 +28,7 @@ const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const navigate = useNavigate();
   const { pathname } = useLocation();
+  const isActive = (page) => pathname === page.path;
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -84,7 +85,7 @@ const Header = () => {
 
   return (
     <>
-      <Container maxWidth="xl">
+      <Container disableGutters maxWidth="xl" sx={{ mb: '30px' }}>
         <Toolbar disableGutters>
           <img
             src={require('../../assets/images/logo.png')}
@@ -121,7 +122,7 @@ const Header = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page.path} onClick={handleCloseNavMenu}>
+                <MenuItem onClick={() =>{ goToPage(page); handleCloseNavMenu()}} key={page.path}>
                   <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
               ))}
@@ -133,11 +134,11 @@ const Header = () => {
               <Button
                 key={page.path}
                 onClick={() => goToPage(page)}
-                sx={{ my: 0, color: pathname === page.path ? '#afeb34' : 'black', display: 'block', minWidth: '98px', minHeight: '36px' }}
+                sx={{ fontFamily: isActive(page) ? 'muli-bolditalic': 'muli-bold', my: 0, color: isActive(page) ? '#afeb34' : 'black', display: 'block', minWidth: '98px', minHeight: '36px' }}
               >
-                {pathname === page.path && <div className='menu-active-top' />}
+                {isActive(page) && <div className='menu-active-top' />}
                 {page.name}
-                {pathname === page.path && <div className='menu-active-bottom' />}
+                {isActive(page) && <div className='menu-active-bottom' />}
               </Button>
             ))}
           </Box>
@@ -155,13 +156,13 @@ const Header = () => {
 
           </Box>
           <Box sx={{ flexGrow: 0 }}>
-            <IconButton size="large" aria-label="show 4 new mails" color="inherit">
+            <IconButton sx={{ px: 0 }} size="large" aria-label="show 4 new mails" color="inherit">
               <MailIcon />
             </IconButton>
           </Box>
         </Toolbar>
       </Container>
-      <HomeHeader />
+      {pathname === '/home' && <HomeHeader />}
     </>
   );
 };
