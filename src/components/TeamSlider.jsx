@@ -17,20 +17,21 @@ const TeamSlider = () => {
                 showThumbs={false}
                 centerSlidePercentage={50}
                 showIndicators={false}
+                showStatus={false}
             >
                 <img
                     src={require('../assets/images/teamdevelopers.webp')}
-                    alt="slider1"
+                    alt="teamdevelopers"
                     style={{width: '80%'}}
                 />
                 <img
                     src={require('../assets/images/teamdesigner.webp')}
-                    alt="slider1"
+                    alt="teamdesigner"
                     style={{width: '80%'}}
                 />
                 <img
                     src={require('../assets/images/teammanagement.webp')}
-                    alt="slider1"
+                    alt="teammanagement"
                     style={{width: '80%'}}
                 />
             </Carousel>

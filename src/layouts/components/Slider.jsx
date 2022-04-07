@@ -12,18 +12,22 @@ const Slider = () => {
       showIndicators={false}
       showThumbs={false}
     >
-      <img src={`https://picsum.photos/200?random=${Math.random()}`} />
+      {/* <img src={`https://picsum.photos/200?random=${Math.random()}`} /> */}
       <img
-        src={require('../../assets/images/slider1.jpeg')}
-        alt="slider1"
+        src={require('../../assets/images/Photo2.jpg')}
+        alt="Photo2"
         height="100%"
       />
       <img
-        src={require('../../assets/images/slider2.jpeg')}
-        alt="slider2"
+        src={require('../../assets/images/Photo4.jpg')}
+        alt="Photo4"
         height="100%"
       />
-      <img src={`https://picsum.photos/200?random=${Math.random()}`} />
+      <img
+        src={require('../../assets/images/Photo9.jpg')}
+        alt="Photo9"
+        height="100%"
+      />
     </Carousel>
   );
 }
