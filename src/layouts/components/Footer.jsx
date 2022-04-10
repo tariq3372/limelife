@@ -3,7 +3,7 @@ import { Grid, Box, Typography, Card, CardContent, TextField, Stack, Button, Div
 
 const Footer = () => {
   return (
-    <Box sx={{ backgroundColor: 'black', padding: '5%' }}>
+    <Box sx={{ backgroundColor: 'black', padding: '5%', position: 'relative'}}>
       <Grid container spacing={5} sx={{ justifyContent: 'space-between' }} >
         <Grid item lg={4} md={12}>
           <img
