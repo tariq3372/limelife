@@ -40,21 +40,3 @@ const Contactus = () => {
 }
 
 export default Contactus
-
-
-{/* <Box sx={{ mt: '160px', ml: "200px", height: '350px', width: '300px'}}>
-<Card >
-  <CardContent>
-    <Typography fontFamily="muli-bold" fontSize={24}>Contact us by email!</Typography>
-    <Typography fontFamily="muli-light" fontSize={14} color="#252525" sx={{ mt: 3 }}>At vero eos et accusamus et iusto odios un dignissimos ducimus qui blan ditiis prasixer esentium voluptatum.</Typography>
-    <TextField fullWidth size="small" sx={{ mt: 3 }} label="Full Name" multiline maxRows={2} />
-    <TextField fullWidth size="small" sx={{ mt: 3 }} label="Phone Number" multiline maxRows={2} />
-    <TextField fullWidth size="small" sx={{ mt: 3 }} label="Email-address" multiline maxRows={2} />
-    <TextField fullWidth size='small' sx={{ mt: 3 }} label="Message" multiline rows
-      ={4} defaultValue="" />
-    <Button sx={{ borderColor: "black", color: "black", mt: 3 }} variant="outlined">SUBMIT FORM</Button>
-  </CardContent>
-</Card>
-</Box> */}
-
-// ml: '375px', mr: '375px' 
