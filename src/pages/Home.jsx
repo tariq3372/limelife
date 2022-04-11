@@ -7,7 +7,7 @@ const Home = () => {
 
   return (
     <>
-      <Grid container sx={{ mt: '100px', mb: '70px' }}>
+      <Grid container sx={{ mt: '150px', mb: '70px' }}>
         <Grid container md={6}>
           <Grid container>
             {/* 1 */}

@@ -85,7 +85,7 @@ const Header = () => {
 
   return (
     <>
-      <Container disableGutters maxWidth="xl" sx={{ mb: '30px' }}>
+      <Container disableGutters  maxWidth="xxl" sx={{ mb: '30px' }}>
         <Toolbar disableGutters>
           <img
             src={require('../../assets/images/logo.png')}
