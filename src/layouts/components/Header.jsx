@@ -19,7 +19,7 @@ import HomeHeader from './HomeHeader';
 const pages = [
   { name: 'HOME', path: '/home' },
   { name: 'PORTFOLIO', path: '/protfolio' },
-  { name: 'SERVICE', path: '/service' },
+  { name: 'SERVICES', path: '/service' },
   { name: 'ABOUT US', path: '/about-us' },
   { name: 'CONTACT US', path: '/contact-us' },
 ];
@@ -88,7 +88,7 @@ const Header = () => {
       <Container disableGutters  maxWidth="xxl" sx={{ mb: '30px' }}>
         <Toolbar disableGutters>
           <img
-            src={require('../../assets/images/logo.png')}
+            src={require('../../assets/images/LimeLife-Logo-Light.png')}
             alt="logo"
             className="header-logo"
           />
@@ -143,7 +143,7 @@ const Header = () => {
             ))}
           </Box>
           {/* 'rgba(212, 212, 52, 1)' */}
-          <Box sx={{ flexGrow: 0 }}>
+          {/* <Box sx={{ flexGrow: 0 }}>
             <Search>
               <SearchIconWrapper>
                 <SearchIcon />
@@ -159,7 +159,7 @@ const Header = () => {
             <IconButton sx={{ px: 0 }} size="large" aria-label="show 4 new mails" color="inherit">
               <MailIcon />
             </IconButton>
-          </Box>
+          </Box> */}
         </Toolbar>
       </Container>
       {pathname === '/home' && <HomeHeader />}

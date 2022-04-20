@@ -23,7 +23,6 @@ const Portfolio = () => {
     location: "United States",
     author: "kawhi leonard",
   };
-
   const dataArray = [
     {
       src: require('../assets/images/NFT5-BW.jpg'),
@@ -40,6 +39,17 @@ const Portfolio = () => {
       src: require('../assets/images/NFT6-BW.jpg'),
       colorSrc: require('../assets/images/NFT6-Green.jpg'),
       title: "Faton Ademi Mock-Ups",
+      description:
+        "Lorem ipsum dolor sit amet, an consectetur adipisicing elit, sed do eiusmod tempor incididunt uteax labore et dolore magna aliqua. Ut enim ad minim veniam, quisated nostrud exercitation ullamconted laboris nisi ut aliquip ex eating a commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.",
+      client: "DANIEL CRAWLER",
+      date: "09-08-2015",
+      location: "United States",
+      author: "kawhi leonard",
+    },
+    {
+      src: require('../assets/images/Photo10-BW.jpg'),
+      colorSrc: require('../assets/images/Photo10-Green.jpg'),
+      title: "Faton Ademi Mock-Upss",
       description:
         "Lorem ipsum dolor sit amet, an consectetur adipisicing elit, sed do eiusmod tempor incididunt uteax labore et dolore magna aliqua. Ut enim ad minim veniam, quisated nostrud exercitation ullamconted laboris nisi ut aliquip ex eating a commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.",
       client: "DANIEL CRAWLER",
@@ -148,7 +158,7 @@ const Portfolio = () => {
               stopOnHover
               centerMode
               showThumbs={false}
-              centerSlidePercentage={50}
+              centerSlidePercentage={30}
               showIndicators={false}
               showStatus={false}
             >
@@ -157,7 +167,7 @@ const Portfolio = () => {
                   <img
                     src={item.src}
                     alt="image"
-                    style={{ width: "60%" }}
+                    style={{ width: "98%" }}
                   />
                 </div>
               ))}
