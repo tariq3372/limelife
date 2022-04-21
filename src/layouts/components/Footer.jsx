@@ -25,6 +25,7 @@ const Footer = () => {
                 <Typography fontFamily="muli-bold" color="#252525" fontSize={20} >We will love to hear from you!</Typography>
                 <TextField size="small" sx={{ mt: 3 }} label="Name" multiline maxRows={2} />
                 <TextField size="small" sx={{ mt: 3 }} label="Email" multiline maxRows={2} />
+                <TextField size="small" sx={{ mt: 3 }} label="Phone Number" multiline maxRows={2} />
                 <TextField size='small' sx={{ mt: 3 }} label="Comment" multiline rows={4} defaultValue="" />
 
                 {/* <TextField size="small" sx={{ mt: 2 }} label="Name" variant="standard" /> */}
@@ -38,8 +39,8 @@ const Footer = () => {
       </Grid>
 
       <Grid sx={{ mt: '34px', display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
-        <Typography fontFamily='muli-bold' color= "#707070" fontSize= {12} >About | Customer Service | Terms & Conditions | Privacy Policy | Site Map | Contact</Typography>
-        <Typography fontFamily='muli-bold' color= "#707070" fontSize={12}>Copyright #LimeLife © 2022. All rights reserved.</Typography>
+        {/* <Typography fontFamily='muli-bold' color= "#707070" fontSize= {12} >About | Customer Service | Terms & Conditions | Privacy Policy | Site Map | Contact</Typography> */}
+        <Typography fontFamily='muli-bold' color= "#707070" fontSize={12}>Copyright LimeLife © 2022. All rights reserved.</Typography>
       </Grid>
     </Box>
   )

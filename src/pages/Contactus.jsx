@@ -12,8 +12,8 @@ const Contactus = () => {
 
       <Container>
         <Grid container spacing={5} sx={{ my: "5%" }}>
-          <Grid item md={4} sm={12} sx={{ display: "flex", justifyContent: "flex-end" }} >
-            <Card sx={{ height: "100%", width: "100%" }}>
+          <Grid item md={12} sm={12} sx={{ display: "flex", justifyContent: "center" }} >
+            <Card sx={{ height: "100%", width: "50%" }}>
               <CardContent>
                 <Typography fontFamily="muli-bold" fontSize={24}>
                   Contact us by email!
@@ -67,17 +67,6 @@ const Contactus = () => {
                   SUBMIT FORM
                 </Button>
               </CardContent>
-            </Card>
-          </Grid>
-
-          <Grid item md={8} sm={12}>
-            <Card sx={{ height: "100%", width: "100%" }}>
-              <CardMedia
-                component="img"
-                height="100%"
-                image={require("../assets/images/muruj.png")}
-                alt="muruj"
-              />
             </Card>
           </Grid>
         </Grid>
