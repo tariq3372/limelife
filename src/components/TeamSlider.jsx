@@ -20,27 +20,27 @@ const TeamSlider = () => {
                 showStatus={false}
             >
                 <img
-                    src={require('../assets/images/Icon-Abdulrhman.png')}
+                    src={require('../assets/images/Icon-Abdulrhman-small.png')}
                     alt="abdulrehman"
                     style={{width: '80%'}}
                 />  
                 <img
-                    src={require('../assets/images/Icon-Sultan.png')}
+                    src={require('../assets/images/Icon-Sultan-small.png')}
                     alt="sultan"
                     style={{width: '80%'}}
                 />
                 <img
-                    src={require('../assets/images/Icon-Khalid.png')}
+                    src={require('../assets/images/Icon-Khalid-small.png')}
                     alt="khalid"
                     style={{width: '80%'}}
                 />
                 <img
-                    src={require('../assets/images/Icon-Tariq.png')}
+                    src={require('../assets/images/Icon-Tariq-small.png')}
                     alt="tariq"
                     style={{width: '80%'}}
                 />
                 <img
-                    src={require('../assets/images/Icon-Mohammed.png')}
+                    src={require('../assets/images/Icon-Mohammed-small.png')}
                     alt="mohammad"
                     style={{width: '80%'}}
                 />
