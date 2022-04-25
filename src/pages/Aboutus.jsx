@@ -1,12 +1,11 @@
 import { Box, Card, CardMedia, Container, Grid, Typography } from '@mui/material'
 import React from 'react'
+import PageTitle from '../components/PageTitle';
 
 const Aboutus = () => {
   return (
     <Box>
-      <Box sx={{ backgroundColor: 'black', height: "241px", display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-        <Typography fontFamily="muli-bold" color="#FFFFFF" fontSize={30} >ABOUT US</Typography>
-      </Box>
+      <PageTitle title="ABOUT US"/>
       <Container disableGutters>
         <Grid container spacing={8} sx={{ my: '5%' }}>
           <Grid item md={6} sm={12}>

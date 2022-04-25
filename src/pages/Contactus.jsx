@@ -1,15 +1,11 @@
 import { Box, Button, Card, CardContent, TextField, Typography, Grid, CardMedia, Container } from "@mui/material";
 import React from "react";
+import PageTitle from '../components/PageTitle';
 
 const Contactus = () => {
   return (
     <Box>
-      <Box sx={{ backgroundColor: "black", height: "241px",  display: 'flex', justifyContent: "center", alignItems: "center" }} >
-        <Typography fontFamily="muli-bold" color="#FFFFFF" fontSize={30}>
-          CONTACT US
-        </Typography>
-      </Box>
-
+      <PageTitle title="CONTACT US"/>
       <Container>
         <Grid container spacing={5} sx={{ my: "5%" }}>
           <Grid item md={12} sm={12} sx={{ display: "flex", justifyContent: "center" }} >

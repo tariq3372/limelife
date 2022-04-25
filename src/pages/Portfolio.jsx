@@ -10,6 +10,7 @@ import {
 import React, { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import PageTitle from '../components/PageTitle';
 
 const Portfolio = () => {
   const data = {
@@ -72,19 +73,7 @@ const Portfolio = () => {
   const [currSelectedItem, setCurrSelectedItem] = useState(data);
   return (
     <Box>
-      <Box
-        sx={{
-          backgroundColor: "black",
-          height: "241px",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Typography fontFamily="muli-bold" color="#FFFFFF" fontSize={30}>
-          PORTFOLIO
-        </Typography>
-      </Box>
+      <PageTitle title="PORTFOLIO"/>
       <Container disableGutters>
         <Grid container spacing={8} sx={{ my: "4%" }}>
           <Grid item md={8} sm={12}>
