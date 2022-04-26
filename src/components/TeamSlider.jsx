@@ -9,7 +9,7 @@ const TeamSlider = () => {
       disableGutters
       maxWidth="xxl"
       className="teambgm"
-      sx={{ padding: "75px 40px", mb: "5%", mt: "10%" }}
+      sx={{ padding: "75px 40px", mb: "5%", mt: '10%' }}
     >
       <Container>
         <Typography
@@ -43,13 +43,13 @@ const TeamSlider = () => {
               display: "flex",
               justifyContent: "center",
             }}
-            fontFamily="muli-bold"
-            fontSize={22}
+            fontFamily="muli"
+            fontSize={30}
             color="white"
           >
             AbdulRehman
           </Typography>
-          <Typography sx={{ p: "5% 0px 0px", display: 'flex', justifyContent: 'center' }} fontFamily="muli-italic" fontSize={15} color="white" >
+          <Typography sx={{  display: 'flex', justifyContent: 'center' }} fontFamily="muli" fontSize={13} color="white" >
             HR
           </Typography>
         </div>
@@ -66,12 +66,12 @@ const TeamSlider = () => {
               justifyContent: "center",
             }}
             fontFamily="muli-bold"
-            fontSize={22}
+            fontSize={30}
             color="white"
           >
             Sultan
           </Typography>
-          <Typography sx={{ p: "5% 0px 0px", display: 'flex', justifyContent: 'center' }} fontFamily="muli-italic" fontSize={15} color="white" >
+          <Typography sx={{ display: 'flex', justifyContent: 'center' }} fontFamily="muli" fontSize={13} color="white" >
             HR
           </Typography>
         </div>
@@ -88,12 +88,12 @@ const TeamSlider = () => {
               justifyContent: "center",
             }}
             fontFamily="muli-bold"
-            fontSize={22}
+            fontSize={30}
             color="white"
           >
             Khalid
           </Typography>
-          <Typography sx={{ p: "5% 0px 0px", display: 'flex', justifyContent: 'center' }} fontFamily="muli-italic" fontSize={15} color="white" >
+          <Typography sx={{ display: 'flex', justifyContent: 'center' }} fontFamily="muli" fontSize={13} color="white" >
             Graphic Designer
           </Typography>
         </div>
@@ -110,12 +110,12 @@ const TeamSlider = () => {
               justifyContent: "center",
             }}
             fontFamily="muli-bold"
-            fontSize={22}
+            fontSize={30}
             color="white"
           >
             Tariq
           </Typography>
-          <Typography sx={{ p: "5% 0px 0px", display: 'flex', justifyContent: 'center' }} fontFamily="muli-italic" fontSize={15} color="white" >
+          <Typography sx={{  display: 'flex', justifyContent: 'center' }} fontFamily="muli" fontSize={13} color="white" >
             Developer
           </Typography>
         </div>
@@ -132,17 +132,13 @@ const TeamSlider = () => {
               justifyContent: "center",
             }}
             fontFamily="muli-bold"
-            fontSize={22}
+            fontSize={30}
             color="white"
           >
             Muhammad
           </Typography>
-          <img
-            src={require('../assets/images/sign1.jpeg')}
-            alt="sign1"
-            style={{ width: "20%", height: "20%" }}
-          />
-          <Typography sx={{ p: "2% 0px 0px", display: 'flex', justifyContent: 'center'  }}  fontFamily="muli-italic" fontSize={15} color="white" >
+
+          <Typography sx={{  display: 'flex', justifyContent: 'center'  }}  fontFamily="muli" fontSize={13} color="white" >
             Graphic Designer
           </Typography>
 

@@ -1,8 +1,24 @@
 import { Box, Button, Card, CardContent, TextField, Typography, Grid, CardMedia, Container } from "@mui/material";
 import React from "react";
 import PageTitle from '../components/PageTitle';
+import emailjs from "emailjs-com";
 
 const Contactus = () => {
+  const SERVICE_ID = "service_ewj3s4j";
+  const TEMPLATE_ID = "template_78kwgbh";
+  const USER_ID = "H3n90pCcYNhOV5IsJ";
+
+  const submit = () => {
+    const data = {
+      name: 'tariq'
+    }
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, data, USER_ID)
+    .then((result) => {
+      console.log(result.text);
+    }, (error) => {
+      console.log(error.text);
+    });
+  }
   return (
     <Box>
       <PageTitle title="CONTACT US"/>
@@ -59,6 +75,7 @@ const Contactus = () => {
                 <Button
                   sx={{ borderColor: "black", color: "black", mt: 3 }}
                   variant="outlined"
+                  onClick={submit}
                 >
                   SUBMIT FORM
                 </Button>
