@@ -28,6 +28,19 @@ const HomeHeader = () => {
     },
   }));
 
+  const LineBox = styled('div')(({ theme }) => ({
+    height: '100%',
+    border: '15px solid #afeb34',
+    position: 'absolute',
+    right: '0px',
+    zIndex: -1,
+    width: '75%',
+    [theme.breakpoints.up('xl')]: {
+      width: '80%',
+      height: '150%'
+    },
+  }))
+
   return (
     <Grid container sx={{ height: "576px", position: "relative" }}>
       <Grid item sm={12} md={8} sx={{ position: "relative", m: "10%", display: "flex", alignItems: "center" }}>
@@ -37,8 +50,9 @@ const HomeHeader = () => {
           <Typography fontSize={55} color="#252525" fontFamily="muli-bold" lineHeight="35px">CREATIVE</Typography>
           <Typography fontSize={55} color="#252525" fontFamily="muli-bold" >PASSION</Typography>
         </TextBox>
-        <Box sx={{ height: "100%", border: '15px solid #afeb34', width: "75%", position: 'absolute', right: '0px', zIndex: -1 }}>
-        </Box>
+        <LineBox/>
+        {/* <Box sx={{ height: "100%", border: '15px solid #afeb34', width: "75%", position: 'absolute', right: '0px', zIndex: -1 }}>
+        </Box> */}
       </Grid>
       <SliderBox>
         <Slider />
