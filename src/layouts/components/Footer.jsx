@@ -8,7 +8,7 @@ const Footer = () => {
   const SERVICE_ID = "service_ewj3s4j";
   const TEMPLATE_ID = "template_78kwgbh";
   const USER_ID = "H3n90pCcYNhOV5IsJ";
-
+  const date = `Copyright LimeLife © ${new Date().getUTCFullYear()}. All rights reserved.`
   const {
     control,
     handleSubmit,
@@ -159,7 +159,7 @@ const Footer = () => {
       </Grid>
 
       <Grid sx={{ mt: '34px', display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
-        <Typography fontFamily='muli-bold' color= "#707070" fontSize={12}>Copyright LimeLife © 2022. All rights reserved.</Typography>
+        <Typography fontFamily='muli-bold' color= "#707070" fontSize={12}>{date}</Typography>
       </Grid>
     </Box>
   )
