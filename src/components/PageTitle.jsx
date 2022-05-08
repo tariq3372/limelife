@@ -17,5 +17,4 @@ const PageTitle = ({title}) => (
     </Typography>
   </Box>
 );
-
 export default PageTitle;
