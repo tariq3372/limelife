@@ -5,6 +5,7 @@ import { CssBaseline } from '@mui/material';
 import { ThemeProvider, createTheme, StyledEngineProvider } from '@mui/material/styles';
 //
 import palette from './palette';
+import sizes from './sizes';
 import typography from './typography';
 
 // ----------------------------------------------------------------------
@@ -18,6 +19,7 @@ export default function ThemeConfig({ children }) {
     () => ({
       palette,
       typography,
+      sizes
     }),
     []
   );

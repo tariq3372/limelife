@@ -2,6 +2,7 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { Container, Typography } from "@mui/material";
+import sizes from "../theme/sizes";
 
 const TeamSlider = () => {
   return (
@@ -9,7 +10,7 @@ const TeamSlider = () => {
       disableGutters
       maxWidth="xxl"
       className="teambgm"
-      sx={{ padding: "75px 40px", mb: "5%", mt: '10%' }}
+      sx={{ padding: "75px 40px", mb: sizes.base, mt: '10%' }}
     >
       <Container>
         <Typography
@@ -72,7 +73,7 @@ const TeamSlider = () => {
             Sultan
           </Typography>
           <Typography sx={{ display: 'flex', justifyContent: 'center' }} fontFamily="muli" fontSize={13} color="white" >
-            HR
+            CEO
           </Typography>
         </div>
         <div>
@@ -94,7 +95,7 @@ const TeamSlider = () => {
             Khalid
           </Typography>
           <Typography sx={{ display: 'flex', justifyContent: 'center' }} fontFamily="muli" fontSize={13} color="white" >
-            Graphic Designer
+            GRAPHIC DESIGNER
           </Typography>
         </div>
         <div>
@@ -116,7 +117,7 @@ const TeamSlider = () => {
             Tariq
           </Typography>
           <Typography sx={{  display: 'flex', justifyContent: 'center' }} fontFamily="muli" fontSize={13} color="white" >
-            Developer
+            DEVELOPER
           </Typography>
         </div>
         <div>
@@ -139,7 +140,7 @@ const TeamSlider = () => {
           </Typography>
 
           <Typography sx={{  display: 'flex', justifyContent: 'center'  }}  fontFamily="muli" fontSize={13} color="white" >
-            Graphic Designer
+          GRAPHIC DESIGNER
           </Typography>
 
         </div>

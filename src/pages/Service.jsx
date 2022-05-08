@@ -4,13 +4,14 @@ import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import { Box, Container, Grid, Typography, Divider, CardMedia, Card } from "@mui/material";
 import React from "react";
 import PageTitle from '../components/PageTitle';
+import sizes from '../theme/sizes';
 
 const Service = () => {
   return (
     <Box>
       <PageTitle title="SERVICES" />
       <Container disableGutters>
-        <Grid container spacing={1} sx={{ my: "2%" }}>
+        <Grid container spacing={1} sx={{ mb: sizes.base }}>
           <Grid item md={6} sm={12}>
             <Box sx={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
               <BrushIcon sx={{ color: "#afeb34" }}/>
@@ -26,7 +27,7 @@ const Service = () => {
             </Typography>
           </Grid>
           <Grid item md={6} sm={12}>
-            <Card sx={{ height: "75%", width: "75%" }}>
+            <Card sx={{ height: "100%", width: "100%" }}>
               <CardMedia
                 component="img"
                 height="100%"
@@ -37,7 +38,7 @@ const Service = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={1} sx={{ my: "2%" }}>
+        <Grid container spacing={1} sx={{ mb: sizes.base }}>
           <Grid item md={6} sm={12}>
             <Box
               sx={{
@@ -68,7 +69,7 @@ const Service = () => {
             </Typography>
           </Grid>
           <Grid item md={6} sm={12}>
-            <Card sx={{ height: "75%", width: "75%" }}>
+            <Card sx={{ height: "100%", width: "100%" }}>
               <CardMedia
                 component="img"
                 height="100%"
@@ -79,7 +80,7 @@ const Service = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={1} sx={{ my: "2%" }}>
+        <Grid container spacing={1} sx={{ mb: sizes.base }}>
           <Grid item md={6} sm={12}>
             <Box
               sx={{
@@ -111,7 +112,7 @@ const Service = () => {
             </Typography>
           </Grid>
           <Grid item md={6} sm={12}>
-            <Card sx={{ height: "75%", width: "75%" }}>
+            <Card sx={{ height: "100%", width: "100%" }}>
               <CardMedia
                 component="img"
                 height="100%"

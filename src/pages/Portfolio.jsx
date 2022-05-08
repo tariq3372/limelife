@@ -11,6 +11,7 @@ import React, { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import PageTitle from '../components/PageTitle';
+import sizes from "../theme/sizes";
 
 const Portfolio = () => {
   const data = {
@@ -73,11 +74,11 @@ const Portfolio = () => {
   const [currSelectedItem, setCurrSelectedItem] = useState(data);
   return (
     <Box>
-      <PageTitle title="PORTFOLIO"/>
+      <PageTitle title="PORTFOLIO" />
       <Container disableGutters>
-        <Grid container spacing={8} sx={{ my: "4%" }}>
+        <Grid container spacing={8} sx={{ mb: sizes.base }}>
           <Grid item md={8} sm={12}>
-            <Card sx={{ height: "90%", width: "90%" }}>
+            <Card sx={{ height: "100%", width: "100%" }}>
               <CardMedia
                 component="img"
                 height="100%"
@@ -85,7 +86,7 @@ const Portfolio = () => {
               />
             </Card>
           </Grid>
-          <Grid item md={4} sm={12}>
+          <Grid item md={4} sm={12} sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             <Typography fontFamily="muli-bold" fontSize={30}>
               {" "}
               {currSelectedItem?.title}{" "}
@@ -139,7 +140,7 @@ const Portfolio = () => {
           </Grid>
         </Grid>
 
-        <Grid container spacing={4} sx={{ my: "3%" }}>
+        <Grid container spacing={4} sx={{ mb: sizes.base }}>
           <Grid item md={12} sm={12}>
             <Carousel
               autoPlay
@@ -155,7 +156,7 @@ const Portfolio = () => {
                 <div style={{ cursor: 'pointer' }} onMouseOver={() => setCurrSelectedItem(item)}>
                   <img
                     src={item.src}
-                    alt="image"
+                    alt="portfolio"
                     style={{ width: "98%" }}
                   />
                 </div>

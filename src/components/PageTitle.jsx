@@ -1,4 +1,5 @@
 import { Box, Typography } from "@mui/material";
+import sizes from '../theme/sizes';
 
 const PageTitle = ({title}) => (
   <Box
@@ -8,6 +9,7 @@ const PageTitle = ({title}) => (
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
+      mb: sizes.base
     }}
   >
     <Typography fontFamily="muli-bold" color="#FFFFFF" fontSize={30}>
