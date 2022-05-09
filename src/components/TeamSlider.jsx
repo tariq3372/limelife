@@ -51,7 +51,7 @@ const TeamSlider = () => {
             AbdulRehman
           </Typography>
           <Typography sx={{  display: 'flex', justifyContent: 'center' }} fontFamily="muli" fontSize={13} color="white" >
-            HR
+            CTO
           </Typography>
         </div>
         <div>
@@ -73,7 +73,7 @@ const TeamSlider = () => {
             Sultan
           </Typography>
           <Typography sx={{ display: 'flex', justifyContent: 'center' }} fontFamily="muli" fontSize={13} color="white" >
-            CEO
+            HEAD GRAPHIC DESIGN
           </Typography>
         </div>
         <div>
@@ -95,7 +95,7 @@ const TeamSlider = () => {
             Khalid
           </Typography>
           <Typography sx={{ display: 'flex', justifyContent: 'center' }} fontFamily="muli" fontSize={13} color="white" >
-            GRAPHIC DESIGNER
+            PROJECT MANAGER
           </Typography>
         </div>
         <div>
@@ -117,7 +117,7 @@ const TeamSlider = () => {
             Tariq
           </Typography>
           <Typography sx={{  display: 'flex', justifyContent: 'center' }} fontFamily="muli" fontSize={13} color="white" >
-            DEVELOPER
+            HEAD DEVELOPER
           </Typography>
         </div>
         <div>
