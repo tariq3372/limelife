@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { Container, Typography } from "@mui/material";
 import sizes from "../theme/sizes";
 
 const TeamSlider = () => {
+  const [isMobile, setIsMobile] = useState(false)
+ 
+  const handleResize = () => {
+    if (window.innerWidth < 720) {
+        setIsMobile(true)
+    } else {
+        setIsMobile(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize)
+  })
   return (
     <Container
       disableGutters
@@ -28,7 +41,7 @@ const TeamSlider = () => {
         stopOnHover
         centerMode
         showThumbs={false}
-        centerSlidePercentage={40}
+        centerSlidePercentage={isMobile ? 100 : 40}
         showIndicators={false}
         showStatus={false}
       >
