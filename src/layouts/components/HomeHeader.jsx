@@ -45,10 +45,10 @@ const HomeHeader = () => {
     <Grid container sx={{ height: "576px", position: "relative" }}>
       <Grid item sm={12} md={8} sx={{ position: "relative", m: "10%", display: "flex", alignItems: "center" }}>
         <TextBox>
-          <Typography fontSize={20} sx={{ mb: "10px", letterSpacing: "01px" }}>WELCOME TO</Typography>
-          <Typography fontSize={45} color="#252525" fontFamily="muli-bold">LIMELIFE</Typography>
-          <Typography fontSize={45} color="#252525" fontFamily="muli-bold" lineHeight="35px">FIRST NFT</Typography>
-          <Typography fontSize={35} color="#252525"  >STUDIO IN KSA</Typography>
+          <Typography fontSize={20} sx={{  letterSpacing: "01px" }}>WELCOME TO</Typography>
+          <Typography fontSize={40} color="#252525" fontFamily="muli-bold">LIMELIFE</Typography>
+          <Typography fontSize={40} color="#252525" fontFamily="muli-bold" lineHeight="35px">FIRST NFT</Typography>
+          <Typography fontSize={27} color="#252525" sx={{ letterSpacing: "01px" }}  >STUDIO IN KSA</Typography>
         </TextBox>
         <LineBox/>
         {/* <Box sx={{ height: "100%", border: '15px solid #afeb34', width: "75%", position: 'absolute', right: '0px', zIndex: -1 }}>
