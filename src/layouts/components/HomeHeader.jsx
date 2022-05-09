@@ -46,7 +46,7 @@ const HomeHeader = () => {
       <Grid item sm={12} md={8} sx={{ position: "relative", m: "10%", display: "flex", alignItems: "center" }}>
         <TextBox>
           <Typography fontSize={20} sx={{ mb: "10px", letterSpacing: "01px" }}>WELCOME TO</Typography>
-          <Typography fontSize={45} color="#252525" fontFamily="muli-bold"> <span style={{ color: "#afeb34" }}>#</span>LIMELIFE</Typography>
+          <Typography fontSize={45} color="#252525" fontFamily="muli-bold">LIMELIFE</Typography>
           <Typography fontSize={50} color="#252525" fontFamily="muli-bold" lineHeight="35px">FIRST NFT</Typography>
           <Typography fontSize={35} color="#252525"  >STUDIO IN KSA</Typography>
         </TextBox>
