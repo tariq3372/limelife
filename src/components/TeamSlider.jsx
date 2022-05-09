@@ -51,7 +51,7 @@ const TeamSlider = () => {
             AbdulRehman
           </Typography>
           <Typography sx={{  display: 'flex', justifyContent: 'center' }} fontFamily="muli" fontSize={13} color="white" >
-            CEO
+            OWNER
           </Typography>
         </div>
         <div>

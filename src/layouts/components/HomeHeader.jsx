@@ -45,14 +45,10 @@ const HomeHeader = () => {
     <Grid container sx={{ height: "576px", position: "relative" }}>
       <Grid item sm={12} md={8} sx={{ position: "relative", m: "10%", display: "flex", alignItems: "center" }}>
         <TextBox>
-          <Typography fontSize={20} sx={{ mb: "10px", letterSpacing: "02px" }}>WE LOVE TO</Typography>
-          {/* <Typography fontSize={33} sx={{ mb: "10px", letterSpacing: "03px" }}>FIRST LIMELIFE</Typography> */}
-          {/* <Typography fontSize={33} sx={{ mb: "10px", letterSpacing: "03px" }}>STUDIO IN KSA</Typography> */}
-
-          <Typography fontSize={55} color="#252525" fontFamily="muli-extralight"> <span style={{ color: "#afeb34" }}>#</span>UNIQUE</Typography>
-          {/* <Typography fontSize={55} color="#252525" fontFamily="muli-extralight"> <span style={{ color: "#afeb34" }}>#</span>FIRST LIMELIFE STUDIO</Typography> */}
-          <Typography fontSize={55} color="#252525" fontFamily="muli-bold" lineHeight="35px">CREATIVE</Typography>
-          <Typography fontSize={55} color="#252525" fontFamily="muli-bold" >PASSION</Typography>
+          <Typography fontSize={20} sx={{ mb: "10px", letterSpacing: "01px" }}>WELCOME TO</Typography>
+          <Typography fontSize={45} color="#252525" fontFamily="muli-bold"> <span style={{ color: "#afeb34" }}>#</span>LIMELIFE</Typography>
+          <Typography fontSize={50} color="#252525" fontFamily="muli-bold" lineHeight="35px">FIRST NFT</Typography>
+          <Typography fontSize={35} color="#252525"  >STUDIO IN KSA</Typography>
         </TextBox>
         <LineBox/>
         {/* <Box sx={{ height: "100%", border: '15px solid #afeb34', width: "75%", position: 'absolute', right: '0px', zIndex: -1 }}>
