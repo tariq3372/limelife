@@ -21,7 +21,7 @@ const Service = () => {
               </Typography>
             </Box>
             <Typography fontSize={16} fontFamily="muli-light" color="#252525" mt={3} >
-              LIMELIFE offers a limitless range of design options, clients can
+              LIMELIFE Studios offers a limitless range of design options, clients can
               choose from the suggested designs. Or create newly tailored
               designs made from the wildest imaginations.
             </Typography>
@@ -64,7 +64,7 @@ const Service = () => {
               color="#252525"
               mt={3}
             >
-              LIMELIFE will handle the publishment of the NFTs on the block chain
+              LIMELIFE Studios will handle the publishment of the NFTs on the block chain
               via NFT market places.
             </Typography>
           </Grid>

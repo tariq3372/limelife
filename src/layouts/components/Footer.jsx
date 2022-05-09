@@ -47,7 +47,7 @@ const Footer = () => {
           />
           <Typography color="#707070" fontFamily='muli' fontSize={14} > Excepteur sint occaecat cupidatat non proident, sunt in culpa officia deserunt mollitid est laborum. Sed ut perspiciatis unde qui omnis iste natus error sit voluptatem. </Typography>
           <hr style={{ margin: '30px 0px' }} />
-          <Typography fontFamily='muli' fontSize={14} color='#707070'><span style={{ color: "#afeb34" }}>A:</span> First NFT Studio in KSA Located in Riyadh,</Typography>
+          <Typography fontFamily='muli' fontSize={14} color='#707070'><span style={{ color: "#afeb34" }}>A:</span> First NFT Studios in KSA Located in Riyadh,</Typography>
           <Typography fontFamily='muli' fontSize={14} color='#707070'><span style={{ color: "#afeb34" }}>E:</span> limelifesaudia@gmail.com </Typography>
           <Typography fontFamily='muli' fontSize={14} color='#707070'><span style={{ color: "#afeb34" }}>P:</span> (00) 123 456 789</Typography>
         </Grid>

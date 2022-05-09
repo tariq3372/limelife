@@ -46,7 +46,11 @@ const HomeHeader = () => {
       <Grid item sm={12} md={8} sx={{ position: "relative", m: "10%", display: "flex", alignItems: "center" }}>
         <TextBox>
           <Typography fontSize={20} sx={{ mb: "10px", letterSpacing: "02px" }}>WE LOVE TO</Typography>
+          {/* <Typography fontSize={33} sx={{ mb: "10px", letterSpacing: "03px" }}>FIRST LIMELIFE</Typography> */}
+          {/* <Typography fontSize={33} sx={{ mb: "10px", letterSpacing: "03px" }}>STUDIO IN KSA</Typography> */}
+
           <Typography fontSize={55} color="#252525" fontFamily="muli-extralight"> <span style={{ color: "#afeb34" }}>#</span>UNIQUE</Typography>
+          {/* <Typography fontSize={55} color="#252525" fontFamily="muli-extralight"> <span style={{ color: "#afeb34" }}>#</span>FIRST LIMELIFE STUDIO</Typography> */}
           <Typography fontSize={55} color="#252525" fontFamily="muli-bold" lineHeight="35px">CREATIVE</Typography>
           <Typography fontSize={55} color="#252525" fontFamily="muli-bold" >PASSION</Typography>
         </TextBox>
