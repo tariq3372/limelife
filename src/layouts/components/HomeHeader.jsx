@@ -47,7 +47,7 @@ const HomeHeader = () => {
         <TextBox>
           <Typography fontSize={20} sx={{  letterSpacing: "01px" }}>WELCOME TO</Typography>
           <Typography fontSize={40} color="#252525" fontFamily="muli-bold">LIMELIFE</Typography>
-          <Typography fontSize={36} color="#252525" fontFamily="muli-bold" lineHeight="35px">FIRST NFT</Typography>
+          <Typography fontSize={40} color="#252525" fontFamily="muli-bold" lineHeight="35px">FIRST NFT</Typography>
           <Typography fontSize={27} color="#252525" sx={{ letterSpacing: "01px" }}  >STUDIO IN KSA</Typography>
         </TextBox>
         <LineBox/>

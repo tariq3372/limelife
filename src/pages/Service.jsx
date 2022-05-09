@@ -20,7 +20,7 @@ const Service = () => {
                 DESIGN
               </Typography>
             </Box>
-            <Typography fontSize={16} fontFamily="muli-light" color="#252525" mt={3} >
+            <Typography fontSize={20} fontFamily="muli-light" color="#252525" mt={3} >
               LIMELIFE Studios offers a limitless range of design options, clients can
               choose from the suggested designs. Or create newly tailored
               designs made from the wildest imaginations.
@@ -59,7 +59,7 @@ const Service = () => {
               </Typography>
             </Box>
             <Typography
-              fontSize={16}
+              fontSize={20}
               fontFamily="muli-light"
               color="#252525"
               mt={3}
@@ -101,7 +101,7 @@ const Service = () => {
               </Typography>
             </Box>
             <Typography
-              fontSize={16}
+              fontSize={20}
               fontFamily="muli-light"
               color="#252525"
               mt={3}
