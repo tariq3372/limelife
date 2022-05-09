@@ -1,15 +1,17 @@
-import { Box, Button, Card, CardContent, TextField, Typography, Grid, CardMedia, Container } from "@mui/material";
-import React from "react";
+import { Box, Button, Card, CardContent, TextField, Typography, Grid, CardMedia, Container, CircularProgress } from "@mui/material";
+import React, { useState } from "react";
 import PageTitle from '../components/PageTitle';
 import emailjs from "emailjs-com";
 import sizes from "../theme/sizes";
 import { useForm, Controller } from "react-hook-form";
 import { EMAIL_REGEX } from "../helpers";
+import Swal from "sweetalert2";
 
 const Contactus = () => {
   const SERVICE_ID = "service_ewj3s4j";
   const TEMPLATE_ID = "template_78kwgbh";
   const USER_ID = "H3n90pCcYNhOV5IsJ";
+  const [loading, setLoading] = useState(false);
 
   const {
     control,
@@ -26,20 +28,37 @@ const Contactus = () => {
   });
 
   const sendEmail = (formData) => {
+    setLoading(true)
     emailjs
       .send(SERVICE_ID, TEMPLATE_ID, formData, USER_ID)
       .then(
         (result) => {
-          alert("Message Sent, We will get back to you shortly", result.text);
+          setLoading(false)
+          Swal.fire(
+            'Success',
+            "Message Sent, We will get back to you shortly",
+            "success"
+          );
+          // alert("Message Sent, We will get back to you shortly", result.text);
         },
         (error) => {
-          alert("An error occurred, Please try again", error.text);
+          setLoading(false)
+          Swal.fire(
+            'Error',
+            "Something went wrong, Please try again later",
+            "error"
+          );
+          // alert("An error occurred, Please try again", error.text);
         }
       );
   };
 
   const renderError = (error) => (error && <Typography sx={{ fontSize: '12px', marginBottom: 0, marginTop: 1, color: "#e55353" }} className='error'>{error.message}</Typography>);
-
+  if (loading) return (
+    <Container style={{ minHeight: "100%", display: "flex", alignItems: 'center', justifyContent: 'center' }}>
+      <CircularProgress color="inherit" />
+    </Container>
+  )
   return (
     <Box>
       <PageTitle title="CONTACT US" />
