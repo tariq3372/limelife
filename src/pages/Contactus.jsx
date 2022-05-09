@@ -16,6 +16,7 @@ const Contactus = () => {
   const {
     control,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm({
     reValidateMode: "onChange",
@@ -39,6 +40,7 @@ const Contactus = () => {
             "Message Sent, We will get back to you shortly",
             "success"
           );
+          reset()
           // alert("Message Sent, We will get back to you shortly", result.text);
         },
         (error) => {
@@ -54,11 +56,6 @@ const Contactus = () => {
   };
 
   const renderError = (error) => (error && <Typography sx={{ fontSize: '12px', marginBottom: 0, marginTop: 1, color: "#e55353" }} className='error'>{error.message}</Typography>);
-  if (loading) return (
-    <Container style={{ minHeight: "100%", display: "flex", alignItems: 'center', justifyContent: 'center' }}>
-      <CircularProgress color="inherit" />
-    </Container>
-  )
   return (
     <Box>
       <PageTitle title="CONTACT US" />
@@ -86,6 +83,7 @@ const Contactus = () => {
                     control={control}
                     render={({ field: { ref, ...rest } }) => (
                       <TextField
+                        disabled={loading}
                         {...rest}
                         error={errors.name}
                         fullWidth
@@ -107,6 +105,7 @@ const Contactus = () => {
                     control={control}
                     render={({ field: { ref, ...rest } }) => (
                       <TextField
+                        disabled={loading}
                         {...rest}
                         error={errors.phone}
                         fullWidth
@@ -128,6 +127,7 @@ const Contactus = () => {
                     control={control}
                     render={({ field: { ref, ...rest } }) => (
                       <TextField
+                        disabled={loading}
                         {...rest}
                         error={errors.email}
                         fullWidth
@@ -150,6 +150,7 @@ const Contactus = () => {
                     control={control}
                     render={({ field: { ref, ...rest } }) => (
                       <TextField
+                        disabled={loading}
                         {...rest}
                         error={errors.message}
                         fullWidth
@@ -167,13 +168,14 @@ const Contactus = () => {
                   />
                   {renderError(errors.message)}
                   <Button
+                    disabled={loading}
                     sx={{ borderColor: "black", color: "black", mt: 3 }}
                     variant="outlined"
                     // onClick={handleSubmit(submit)}
                     type="submit"
                     value="SEND MESSAGE"
-                  >
-                    SUBMIT FORM
+                    >
+                    {loading ? <CircularProgress color="inherit" size={25} /> : 'SUBMIT FORM'}
                   </Button>
                 </form>
               </CardContent>
