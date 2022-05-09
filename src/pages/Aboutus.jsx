@@ -30,7 +30,7 @@ const Aboutus = () => {
           </Grid>
           <Grid item md={6} sm={12}>
             <Typography fontSize={36} fontFamily="muli-bold" >ABOUT US</Typography>
-            <Typography fontSize={18} fontFamily="muli-light" color="#252525" mt={3}>NAFEEZ is your bridge to the NFT world. We walk our clients through every step of the way. From design to launch, helping individuals and companies connect with their fan/customer base through NFTs.</Typography>
+            <Typography fontSize={18} fontFamily="muli-light" color="#252525" mt={3}>NFTEEZ is your bridge to the NFT world. We walk our clients through every step of the way. From design to launch, helping individuals and companies connect with their fan/customer base through NFTs.</Typography>
           </Grid>
         </Grid>
         
