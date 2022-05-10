@@ -3,6 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import { Container, Typography } from "@mui/material";
 import sizes from "../theme/sizes";
+import { styled } from '@mui/material/styles';
 
 const TeamSlider = () => {
   const [isMobile, setIsMobile] = useState(false)
@@ -18,6 +19,19 @@ const TeamSlider = () => {
   useEffect(() => {
     window.addEventListener("resize", handleResize)
   })
+
+  const Text = styled('div')(({ theme }) => ({
+    padding: '0px 0px 50px',
+    display: "flex",
+    justifyContent: "center",
+    fontFamily: "muli-bold",
+    fontSize: 30,
+    color:"white",
+    [theme.breakpoints.up('md')]: {
+      fontSize: 72,
+    },
+  }));
+
   return (
     <Container
       disableGutters
@@ -26,14 +40,17 @@ const TeamSlider = () => {
       sx={{ padding: "75px 40px", mb: sizes.base, mt: '10%' }}
     >
       <Container>
-        <Typography
+        {/* <Typography
           sx={{ p: "0px 0px 50px", display: "flex", justifyContent: "center" }}
           fontFamily="muli-bold"
           fontSize={72}
           color="white"
         >
           Meet the team
-        </Typography>
+        </Typography> */}
+        <Text>
+        Meet the team
+        </Text>
       </Container>
       <Carousel
         autoPlay
