@@ -25,10 +25,10 @@ const TeamSlider = () => {
     display: "flex",
     justifyContent: "center",
     fontFamily: "muli-bold",
-    fontSize: 30,
+    fontSize: 25,
     color:"white",
     [theme.breakpoints.up('md')]: {
-      fontSize: 72,
+      fontSize: 40,
     },
   }));
 
@@ -37,7 +37,7 @@ const TeamSlider = () => {
       disableGutters
       maxWidth="xxl"
       className="teambgm"
-      sx={{ padding: "75px 40px", mb: sizes.base, mt: '10%' }}
+      sx={{ padding: "25px 40px", mb: sizes.base, mt: '10%' }}
     >
       <Container>
         {/* <Typography
@@ -66,7 +66,7 @@ const TeamSlider = () => {
           <img
             src={require("../assets/images/Icon-Abdulrhman-small.png")}
             alt="abdulrehman"
-            style={{ width: "80%" }}
+            style={{ width: "40%" }}
           />
           <Typography
             sx={{
@@ -88,7 +88,7 @@ const TeamSlider = () => {
           <img
             src={require("../assets/images/Icon-Sultan-small.png")}
             alt="sultan"
-            style={{ width: "80%" }}
+            style={{ width: "40%" }}
           />
           <Typography
             sx={{
@@ -110,7 +110,7 @@ const TeamSlider = () => {
           <img
             src={require("../assets/images/Icon-Khalid-small.png")}
             alt="khalid"
-            style={{ width: "80%" }}
+            style={{ width: "40%" }}
           />
           <Typography
             sx={{
@@ -132,7 +132,7 @@ const TeamSlider = () => {
           <img
             src={require("../assets/images/Icon-Tariq-small.png")}
             alt="tariq"
-            style={{ width: "80%" }}
+            style={{ width: "40%" }}
           />
           <Typography
             sx={{
@@ -154,7 +154,7 @@ const TeamSlider = () => {
           <img
             src={require("../assets/images/Icon-Mohammed-small.png")}
             alt="muhammad"
-            style={{ width: "80%" }}
+            style={{ width: "40%" }}
           />
           <Typography
             sx={{
