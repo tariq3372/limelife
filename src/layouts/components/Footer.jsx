@@ -62,7 +62,8 @@ const Footer = () => {
             className="footer-logo"
           />
           <Typography color="#707070" fontFamily='muli' fontSize={14} >LIMELIFE Studios is your bridge to the NFT world. We walk our clients through every step of the way. From design to launch, helping individuals and companies connect with their fan/customer base through NFTs.</Typography>
-          <hr style={{ margin: '30px 0px' }} />
+          {/* <hr style={{ margin: '30px 0px' }} /> */}
+          <Divider sx={{ m: '30px 0px', backgroundColor: 'white' }}/>
           {/* <div style={{ margin: '30px 0px' }}> */}
           <Typography fontFamily='muli' fontSize={14} color='#707070'><span style={{ color: "#afeb34" }}>A:</span> First NFT Studios in KSA Located in Riyadh,</Typography>
           <Typography fontFamily='muli' fontSize={14} color='#707070'><span style={{ color: "#afeb34" }}>E:</span> limelifesaudia@gmail.com </Typography>
