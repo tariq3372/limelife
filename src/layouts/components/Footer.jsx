@@ -4,10 +4,6 @@ import emailjs from "emailjs-com";
 import { useForm, Controller } from "react-hook-form";
 import { EMAIL_REGEX } from '../../helpers';
 import Swal from "sweetalert2";
-import InstagramIcon from '@mui/icons-material/Instagram';
-import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const Footer = () => {
   const SERVICE_ID = "service_ewj3s4j";
@@ -69,11 +65,6 @@ const Footer = () => {
           <div style={{ margin: '50px' }} />
           <Typography fontFamily='muli' fontSize={14} color='#707070'><span style={{ color: "#afeb34" }}>A:</span> First NFT Studios in KSA Located in Riyadh,</Typography>
           <Typography fontFamily='muli' fontSize={14} color='#707070'><span style={{ color: "#afeb34" }}>E:</span> limelifesaudia@gmail.com </Typography>
-          <div style={{ margin: '50px' }} />
-          <InstagramIcon color='primary' fontSize='large' />
-          <FacebookOutlinedIcon color='primary' fontSize='large' />
-          <TwitterIcon color='primary' fontSize='large' />
-          <LinkedInIcon color='primary' fontSize='large' />
         </Grid>
         <Grid item lg={4} md={12}>
           <Card>
