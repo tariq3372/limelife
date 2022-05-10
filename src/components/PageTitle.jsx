@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import sizes from '../theme/sizes';
 
-const PageTitle = ({title}) => (
+const PageTitle = ({ title }) => (
   <Box
     sx={{
       backgroundColor: "black",

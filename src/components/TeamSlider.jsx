@@ -7,12 +7,12 @@ import { styled } from '@mui/material/styles';
 
 const TeamSlider = () => {
   const [isMobile, setIsMobile] = useState(false)
- 
+
   const handleResize = () => {
     if (window.innerWidth < 720) {
-        setIsMobile(true)
+      setIsMobile(true)
     } else {
-        setIsMobile(false)
+      setIsMobile(false)
     }
   }
 
@@ -26,7 +26,7 @@ const TeamSlider = () => {
     justifyContent: "center",
     fontFamily: "muli-bold",
     fontSize: 25,
-    color:"white",
+    color: "white",
     [theme.breakpoints.up('md')]: {
       fontSize: 40,
     },
@@ -49,7 +49,7 @@ const TeamSlider = () => {
           Meet the team
         </Typography> */}
         <Text>
-        Meet the team
+          Meet the team
         </Text>
       </Container>
       <Carousel
@@ -80,7 +80,7 @@ const TeamSlider = () => {
           >
             AbdulRehman
           </Typography>
-          <Typography sx={{  display: 'flex', justifyContent: 'center' }} fontFamily="muli" fontSize={13} color="white" >
+          <Typography sx={{ display: 'flex', justifyContent: 'center' }} fontFamily="muli" fontSize={13} color="white" >
             OWNER
           </Typography>
         </div>
@@ -146,7 +146,7 @@ const TeamSlider = () => {
           >
             Tariq
           </Typography>
-          <Typography sx={{  display: 'flex', justifyContent: 'center' }} fontFamily="muli" fontSize={13} color="white" >
+          <Typography sx={{ display: 'flex', justifyContent: 'center' }} fontFamily="muli" fontSize={13} color="white" >
             HEAD DEVELOPER
           </Typography>
         </div>
@@ -169,15 +169,12 @@ const TeamSlider = () => {
             Muhammad
           </Typography>
 
-          <Typography sx={{  display: 'flex', justifyContent: 'center'  }}  fontFamily="muli" fontSize={13} color="white" >
-          GRAPHIC DESIGNER
+          <Typography sx={{ display: 'flex', justifyContent: 'center' }} fontFamily="muli" fontSize={13} color="white" >
+            GRAPHIC DESIGNER
           </Typography>
 
         </div>
       </Carousel>
-      {/* <Container sx={{ display: 'flex', justifyContent: 'center', my: '50px' }}>
-                <Button sx={{ bgcolor: 'white', border: '2px solid #555', fontSize: '16px', borderRadius: '50px', height: '60px', width: '390px', color: 'black' }}>See The Team</Button>
-            </Container> */}
     </Container>
   );
 };
