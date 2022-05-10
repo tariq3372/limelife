@@ -41,7 +41,6 @@ const Contactus = () => {
             "success"
           );
           reset()
-          // alert("Message Sent, We will get back to you shortly", result.text);
         },
         (error) => {
           setLoading(false)
@@ -50,7 +49,6 @@ const Contactus = () => {
             "Something went wrong, Please try again later",
             "error"
           );
-          // alert("An error occurred, Please try again", error.text);
         }
       );
   };

@@ -4,6 +4,10 @@ import emailjs from "emailjs-com";
 import { useForm, Controller } from "react-hook-form";
 import { EMAIL_REGEX } from '../../helpers';
 import Swal from "sweetalert2";
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const Footer = () => {
   const SERVICE_ID = "service_ewj3s4j";
@@ -62,22 +66,23 @@ const Footer = () => {
             className="footer-logo"
           />
           <Typography color="#707070" fontFamily='muli' fontSize={14} >LIMELIFE Studios is your bridge to the NFT world. We walk our clients through every step of the way. From design to launch, helping individuals and companies connect with their fan/customer base through NFTs.</Typography>
-          {/* <hr style={{ margin: '30px 0px' }} /> */}
-          <Divider sx={{ m: '30px 0px', backgroundColor: 'white' }}/>
-          {/* <div style={{ margin: '30px 0px' }}> */}
+          <div style={{ margin: '50px' }} />
           <Typography fontFamily='muli' fontSize={14} color='#707070'><span style={{ color: "#afeb34" }}>A:</span> First NFT Studios in KSA Located in Riyadh,</Typography>
           <Typography fontFamily='muli' fontSize={14} color='#707070'><span style={{ color: "#afeb34" }}>E:</span> limelifesaudia@gmail.com </Typography>
-          {/* </div> */}
-          {/* <Typography fontFamily='muli' fontSize={14} color='#707070'><span style={{ color: "#afeb34" }}>P:</span> (00) 123 456 789</Typography> */}
+          <div style={{ margin: '50px' }} />
+          <InstagramIcon color='primary' fontSize='large' />
+          <FacebookOutlinedIcon color='primary' fontSize='large' />
+          <TwitterIcon color='primary' fontSize='large' />
+          <LinkedInIcon color='primary' fontSize='large' />
         </Grid>
         <Grid item lg={4} md={12}>
           <Card>
             <CardContent>
               <Stack flexDirection='column' >
                 <form className="contact-form" onSubmit={handleSubmit(sendEmail)}>
-                <Typography fontFamily="muli-bold" color="#252525" fontSize={20} >We will love to hear from you!</Typography>
+                  <Typography fontFamily="muli-bold" color="#252525" fontSize={20} >We will love to hear from you!</Typography>
 
-                <Controller
+                  <Controller
                     name="name"
                     control={control}
                     render={({ field: { ref, ...rest } }) => (
@@ -183,7 +188,7 @@ const Footer = () => {
       </Grid>
 
       <Grid sx={{ mt: '34px', display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
-        <Typography fontFamily='muli-bold' color= "#707070" fontSize={12}>{date}</Typography>
+        <Typography fontFamily='muli-bold' color="#707070" fontSize={12}>{date}</Typography>
       </Grid>
     </Box>
   )

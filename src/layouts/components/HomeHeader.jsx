@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import { styled } from '@mui/material/styles';
 import React from "react";
 import Slider from "./Slider";
@@ -45,14 +45,12 @@ const HomeHeader = () => {
     <Grid container sx={{ height: "576px", position: "relative" }}>
       <Grid item sm={12} md={8} sx={{ position: "relative", m: "10%", display: "flex", alignItems: "center" }}>
         <TextBox>
-          <Typography fontSize={20} sx={{  letterSpacing: "01px" }}>WELCOME TO</Typography>
+          <Typography fontSize={20} sx={{ letterSpacing: "01px" }}>WELCOME TO</Typography>
           <Typography fontSize={40} color="#252525" fontFamily="muli-bold">LIMELIFE STUDIOS.</Typography>
           <Typography fontSize={40} color="#252525" fontFamily="muli-bold" lineHeight="35px">THE FIRST NFT</Typography>
           <Typography fontSize={27} color="#252525" sx={{ letterSpacing: "01px" }}  >STUDIO IN KSA</Typography>
         </TextBox>
-        <LineBox/>
-        {/* <Box sx={{ height: "100%", border: '15px solid #afeb34', width: "75%", position: 'absolute', right: '0px', zIndex: -1 }}>
-        </Box> */}
+        <LineBox />
       </Grid>
       <SliderBox>
         <Slider />

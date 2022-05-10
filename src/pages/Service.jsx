@@ -14,7 +14,7 @@ const Service = () => {
         <Grid container spacing={1} sx={{ mb: sizes.base }}>
           <Grid item md={6} sm={12}>
             <Box sx={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
-              <BrushIcon sx={{ color: "#afeb34" }}/>
+              <BrushIcon sx={{ color: "#afeb34" }} />
               <Divider orientation="vertical" color="black" sx={{ mx: 2 }} flexItem />
               <Typography fontSize={24} fontFamily="muli-bold">
                 DESIGN
@@ -47,7 +47,7 @@ const Service = () => {
                 alignItems: "center",
               }}
             >
-              <PublishIcon sx={{ color: "#afeb34" }}/>
+              <PublishIcon sx={{ color: "#afeb34" }} />
               <Divider
                 orientation="vertical"
                 color="black"

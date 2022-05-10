@@ -12,7 +12,6 @@ const Slider = () => {
       showIndicators={false}
       showThumbs={false}
     >
-      {/* <img src={`https://picsum.photos/200?random=${Math.random()}`} /> */}
       <img
         src={require('../../assets/images/Photo2.jpg')}
         alt="Photo2"

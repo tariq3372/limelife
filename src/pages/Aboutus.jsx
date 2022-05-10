@@ -15,11 +15,11 @@ const Aboutus = () => {
 
   return (
     <Box>
-      <PageTitle title="ABOUT US"/>
+      <PageTitle title="ABOUT US" />
       <Container disableGutters>
         <Grid container spacing={8} sx={{ mb: sizes.base }}>
           <Grid item md={6} sm={12}>
-            <Card sx={{ height: '100%', width: '100%'}}>
+            <Card sx={{ height: '100%', width: '100%' }}>
               <CardMedia
                 component="img"
                 height="100%"
@@ -33,7 +33,7 @@ const Aboutus = () => {
             <Typography fontSize={20} fontFamily="muli-light" color="#252525" mt={3}>LIMELIFE Studios is your bridge to the NFT world. We walk our clients through every step of the way. From design to launch, helping individuals and companies connect with their fan/customer base through NFTs.</Typography>
           </Grid>
         </Grid>
-        
+
         <DividerLine />
 
         <Grid container spacing={8} sx={{ mb: sizes.base }}>
@@ -52,7 +52,7 @@ const Aboutus = () => {
             </Card>
           </Grid>
         </Grid>
-        
+
       </Container>
     </Box>
   )

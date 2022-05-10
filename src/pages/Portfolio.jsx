@@ -1,12 +1,4 @@
-import {
-  Box,
-  Card,
-  CardMedia,
-  Container,
-  Grid,
-  Typography,
-  Divider,
-} from "@mui/material";
+import { Box, Card, CardMedia, Container, Grid, Typography, Divider } from "@mui/material";
 import React, { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
@@ -148,52 +140,23 @@ const Portfolio = () => {
               stopOnHover
               centerMode
               showThumbs={false}
-              centerSlidePercentage={30}
+              centerSlidePercentage={25}
               showIndicators={false}
               showStatus={false}
+              dynamicHeight={true}
+              width={'80%'}
             >
               {dataArray?.map((item) => (
                 <div style={{ cursor: 'pointer' }} onMouseOver={() => setCurrSelectedItem(item)}>
                   <img
                     src={item.src}
                     alt="portfolio"
-                    style={{ width: "98%" }}
+                    style={{ width: "95%" }}
                   />
                 </div>
               ))}
             </Carousel>
           </Grid>
-
-          {/* <Grid item md={4} sm={12}>
-            <Card sx={{ height: '100%', width: '100%' }}>
-              <CardMedia
-                component="img"
-                height="100%"
-                image={require('../assets/images/NFT9-BW.jpg')}
-                alt="nft"
-              />
-            </Card>
-          </Grid>
-          <Grid item md={4} sm={12}>
-            <Card sx={{ height: '100%', width: '100%' }}>
-              <CardMedia
-                component="img"
-                height="100%"
-                image={require('../assets/images/NFT9-BW.jpg')}
-                alt="nft"
-              />
-            </Card>
-          </Grid>
-          <Grid item md={4} sm={12}>
-            <Card sx={{ height: '100%', width: '100%' }}>
-              <CardMedia
-                component="img"
-                height="100%"
-                image={require('../assets/images/NFT9-BW.jpg')}
-                alt="nft"
-              />
-            </Card>
-          </Grid> */}
         </Grid>
       </Container>
     </Box>
