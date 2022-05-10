@@ -1,17 +1,21 @@
-import React from 'react'
-import { Grid, Box, Typography, Card, CardContent, TextField, Stack, Button, Divider } from '@mui/material';
+import React, { useState } from 'react'
+import { Grid, Box, Typography, Card, CardContent, TextField, Stack, Button, Divider, CircularProgress } from '@mui/material';
 import emailjs from "emailjs-com";
 import { useForm, Controller } from "react-hook-form";
 import { EMAIL_REGEX } from '../../helpers';
+import Swal from "sweetalert2";
 
 const Footer = () => {
   const SERVICE_ID = "service_ewj3s4j";
   const TEMPLATE_ID = "template_78kwgbh";
   const USER_ID = "H3n90pCcYNhOV5IsJ";
   const date = `Copyright LimeLife © ${new Date().getUTCFullYear()}. All rights reserved.`
+  const [loading, setLoading] = useState(false);
+
   const {
     control,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm({
     reValidateMode: "onChange",
@@ -23,14 +27,26 @@ const Footer = () => {
     }
   });
   const sendEmail = (formData) => {
+    setLoading(true)
     emailjs
       .send(SERVICE_ID, TEMPLATE_ID, formData, USER_ID)
       .then(
         (result) => {
-          alert("Message Sent, We will get back to you shortly", result.text);
+          setLoading(false)
+          Swal.fire(
+            'Success',
+            "Message Sent, We will get back to you shortly",
+            "success"
+          );
+          reset()
         },
         (error) => {
-          alert("An error occurred, Please try again", error.text);
+          setLoading(false)
+          Swal.fire(
+            'Error',
+            "Something went wrong, Please try again later",
+            "error"
+          );
         }
       );
   };
@@ -65,6 +81,7 @@ const Footer = () => {
                     control={control}
                     render={({ field: { ref, ...rest } }) => (
                       <TextField
+                        disabled={loading}
                         {...rest}
                         error={errors.name}
                         fullWidth
@@ -86,6 +103,7 @@ const Footer = () => {
                     control={control}
                     render={({ field: { ref, ...rest } }) => (
                       <TextField
+                        disabled={loading}
                         {...rest}
                         error={errors.phone}
                         fullWidth
@@ -107,6 +125,7 @@ const Footer = () => {
                     control={control}
                     render={({ field: { ref, ...rest } }) => (
                       <TextField
+                        disabled={loading}
                         {...rest}
                         error={errors.email}
                         fullWidth
@@ -129,6 +148,7 @@ const Footer = () => {
                     control={control}
                     render={({ field: { ref, ...rest } }) => (
                       <TextField
+                        disabled={loading}
                         {...rest}
                         error={errors.message}
                         fullWidth
@@ -146,12 +166,13 @@ const Footer = () => {
                   />
                   {renderError(errors.message)}
                   <Button
+                    disabled={loading}
                     sx={{ borderColor: "black", color: "black", mt: 3 }}
                     variant="outlined"
                     type="submit"
                     value="SEND MESSAGE"
                   >
-                    SUBMIT FORM
+                    {loading ? <CircularProgress color="inherit" size={25} /> : 'SUBMIT FORM'}
                   </Button>
                 </form>
               </Stack>
